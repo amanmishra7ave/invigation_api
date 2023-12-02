@@ -25,7 +25,8 @@ jobs:
       run: npm run app.js
 
     - name: Deploy
-      run: |
+      run: node app.js
+      |
         # Add your deployment script or command here
         # For example, deploy to a server using SSH, or deploy to a hosting service
 

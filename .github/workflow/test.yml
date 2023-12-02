@@ -1,0 +1,13 @@
+name: Text
+
+
+on:
+  pull_request:
+      types:[opened]
+
+jobes: 
+    test:
+        runs-on:ubuntu-latest
+        steps:
+          - uses:actions/checkout@v2
+          -uses: ./
