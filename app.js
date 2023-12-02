@@ -21,6 +21,7 @@ app.post('/login', (req, res) => {
   }
 
   // If the email or password is incorrect, return an error
+  console.log("invalide")
   return res.status(401).json({ message: 'Invalid email or password' });
 });
 
